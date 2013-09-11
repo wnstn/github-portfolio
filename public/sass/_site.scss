@@ -37,102 +37,57 @@ a:hover {
   color: $red;
 }
 
+// Reusable classes
+
+.accent {
+  color: $red;
+  font-family: $header-font-family;
+}
+
+.tablet {
+  display: none;
+
+  @include media($tablet) {
+    display: inline;
+  }
+
+  @include media($tablet-wide) {
+    display: inline;
+  }
+}
+
+.quasi-button,
+.quasi-button:link,
+.quasi-button:active,
+.quasi-button:visited,
+.quasi-button:hover {
+  border: 1px solid rgba($green, .3);
+  border-radius: 2px;
+  color: $green;
+  // display: inline-block;
+  font-size: 1rem;
+  margin: 1rem 0;
+  padding: 0 .3rem;
+
+  &:hover {
+    border: 1px solid $green;
+  }
+
+  @include media($tablet) {
+    font-size: 1.5rem;
+  }
+}
+
+.mobile-only {
+  display: inline;
+
+  @include media($tablet) {
+    display: none;
+  }
+}
 
 // Body styles
 
 .home {
   background: url(/images/bg.jpg) repeat top left;
-}
-
-#bars1 {
-  display: inline-block;
-  background-color: $blue;
-  height: 3rem;
-  width: 1%;
-  left: 0;
-  position: relative;
-  margin-bottom: 5.5rem;
-  top: 1em;
-
-  &:before {
-    content: "";
-    display: inline-block;
-    background-color: darken($blue, 10%);
-    height: 3rem;
-    top: 0;
-    position: relative;
-    margin-top: 3rem;
-    width: 100%;
-  }
-
-  &:after {
-    content: "";
-    display: inline-block;
-    background-color: darken($blue, 20%);
-    height: 3rem;
-    margin-top: -.6rem;
-    position: relative;
-    width: 100%;
-  }
-
-  .name {
-    color: $white;
-    font-weight: 300;
-    font-size: .1em;
-    margin: 0;
-    opacity: 0;
-    position: absolute;
-    // top: -2.5rem;
-    top: .6rem;
-    right: 0;
-  }
-}
-
-.live {
-
-  #bars1 {
-    display: inline-block;
-    background-color: $blue;
-    height: 3rem;
-    width: 40%;
-    left: 0;
-    position: relative;
-    margin-bottom: 5.5rem;
-    top: 1em;
-    @include transition(all .2s ease-out);
-
-    &:before {
-      content: "";
-      display: inline-block;
-      background-color: darken($blue, 10%);
-      height: 3rem;
-      top: 0;
-      margin-top: 3rem;
-      width: 90%;
-      @include transition(all .2s ease-out .2s);
-    }
-
-    &:after {
-      content: "";
-      display: inline-block;
-      background-color: darken($blue, 20%);
-      height: 3rem;
-      margin-top: -.6rem;
-      width: 80%;
-      @include transition(all .2s ease-out .2s);
-    }
-
-    .name {
-      color: $white;
-      font-weight: 300;
-      font-size: 3em;
-      margin: 0;
-      opacity: 1;
-      position: absolute;
-      top: .6rem;
-      left: .6em;
-
-      @include transition(all .2s ease-out);
-    }
-  }
 }

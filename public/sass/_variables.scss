@@ -10,8 +10,9 @@ $max-width: em(1024);
 /* Media Queries */
 // Design is mobile first
 
-$tablet: min-width 700px;
-$desktop: min-width 850px;
+$tablet: new-breakpoint(min-width 481px 12);
+$tablet-wide: new-breakpoint(min-width 800px 12);
+$desktop: new-breakpoint(min-width 1025px 12);
 
 /* TYPOGRAPHY */
 
