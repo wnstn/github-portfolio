@@ -63,7 +63,7 @@ a:hover {
 .quasi-button:hover {
   border: 1px solid rgba($green, .3);
   border-radius: 2px;
-  color: $green;
+  color: darken($green, 20%);
   // display: inline-block;
   font-size: 1rem;
   margin: 1rem 0;

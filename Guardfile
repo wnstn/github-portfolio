@@ -9,7 +9,7 @@ end
 
 guard 'sass', :input => 'public/sass', :output => 'public/css'
 
-guard 'coffeescript', :input => 'public/javascripts', :source_map => true
+guard 'coffeescript', :input => 'public/javascripts'
 
 guard 'shotgun' do
   watch('portfolio.rb')
