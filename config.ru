@@ -10,6 +10,6 @@ require 'rack-livereload'
 require './portfolio'
 
 # live reload
-# use Rack::LiveReload
+use Rack::LiveReload
 
 run Portfolio.new
