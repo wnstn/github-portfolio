@@ -20,6 +20,7 @@
     padding: .8rem;
     padding-top: 5rem;
     width: 25%;
+    @include box-shadow(inset -5px 0px 10px rgba($black,.3));
   }
 
   @include media($desktop) {

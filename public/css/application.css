@@ -119,7 +119,8 @@ a:hover {
       bottom: 0;
       padding: .8rem;
       padding-top: 5rem;
-      width: 25%; } }
+      width: 25%;
+      box-shadow: inset -5px 0px 10px rgba(0, 0, 0, 0.3); } }
   @media screen and (min-width: 1025px) {
     #nav-wrapper {
       padding: 1rem;
@@ -158,6 +159,11 @@ a:hover {
   @media screen and (min-width: 481px) {
     #main-portfolio {
       margin-top: 13rem; } }
+  @media screen and (min-width: 800px) {
+    #main-portfolio {
+      width: 75%;
+      margin-left: 25%;
+      margin-top: 2rem; } }
   #main-portfolio .project {
     border-bottom: 1px dotted #2495ba;
     margin: 0 1.5rem;
@@ -165,26 +171,59 @@ a:hover {
     padding-bottom: 1rem; }
     #main-portfolio .project:last-child {
       border-bottom: none; }
+    #main-portfolio .project:before, #main-portfolio .project:after {
+      content: " ";
+      /* 1 */
+      display: table;
+      /* 2 */ }
+    #main-portfolio .project:after {
+      clear: both; }
     @media screen and (min-width: 481px) {
       #main-portfolio .project {
         margin: 0 2rem;
         margin-bottom: 5rem;
         padding-bottom: 3rem; } }
+    @media screen and (min-width: 800px) {
+      #main-portfolio .project {
+        margin-bottom: 4rem;
+        padding-bottom: 2rem; } }
   #main-portfolio .project-title {
     color: #2495ba;
     font-size: 2rem; }
     @media screen and (min-width: 481px) {
       #main-portfolio .project-title {
         font-size: 2.5rem; } }
+    @media screen and (min-width: 800px) {
+      #main-portfolio .project-title {
+        font-size: 3rem; } }
+    @media screen and (min-width: 1025px) {
+      #main-portfolio .project-title {
+        display: block;
+        text-align: center;
+        width: 100%;
+        float: left; } }
   #main-portfolio .project-description {
     color: #244c59;
     font-size: 1.1rem; }
     @media screen and (min-width: 481px) {
       #main-portfolio .project-description {
         font-size: 1.4rem; } }
+    @media screen and (min-width: 1025px) {
+      #main-portfolio .project-description {
+        display: block;
+        float: left;
+        margin: 0;
+        margin-right: 4%;
+        width: 48%; } }
   #main-portfolio .image-wrapper {
     margin-bottom: 1rem;
     max-width: 100%; }
+    @media screen and (min-width: 1025px) {
+      #main-portfolio .image-wrapper {
+        float: left;
+        margin: 0;
+        margin-top: 1rem;
+        width: 48%; } }
     #main-portfolio .image-wrapper img {
       max-width: 100%;
       box-shadow: 1px 1px 1px rgba(36, 76, 89, 0.3); }
@@ -194,3 +233,8 @@ a:hover {
     text-align: center; }
     #main-portfolio .project-link:hover {
       text-decoration: underline; }
+    @media screen and (min-width: 1025px) {
+      #main-portfolio .project-link {
+        display: block;
+        float: left;
+        width: 100%; } }
