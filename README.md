@@ -1,4 +1,4 @@
-adventure-form
+Winston Hearn's Portfolio
 ==============
 
-A one page site to collect recommendations as we travel the US.
+Hello Github, here's a good example of what I can knock out in an evening (well ok, the Sinatra app is something I originally setup for [here](http://ouradventure.in))
