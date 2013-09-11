@@ -11,22 +11,6 @@
   .unstyled > li {
     margin-left: 0; }
 
-.icon-code {
-  background: url(/images/icon-code.png) no-repeat left top;
-  background-size: 100%;
-  display: inline-block;
-  height: 30px;
-  margin: 0 1em;
-  width: 30px; }
-
-.icon-video {
-  background: url(/images/icon-video.png) no-repeat left top;
-  background-size: 100%;
-  display: inline-block;
-  margin: 0 1em;
-  height: 30px;
-  width: 30px; }
-
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
