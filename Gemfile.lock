@@ -98,6 +98,7 @@ DEPENDENCIES
   guard-shotgun!
   json
   neat
+  rack
   rack-livereload
   rest-client
   shotgun (= 0.9)
