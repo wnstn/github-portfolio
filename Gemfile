@@ -10,6 +10,8 @@ gem 'neat'
 gem "rest-client"
 gem "json"
 
+gem 'newrelic_rpm'
+
 group :development do
   gem 'guard'
   gem "guard-livereload"
