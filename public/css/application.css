@@ -202,6 +202,32 @@ a:hover {
         text-align: center;
         width: 100%;
         float: left; } }
+  #main-portfolio .project-technologies {
+    font-size: 1rem;
+    list-style: none;
+    margin: 0;
+    margin-bottom: 1.5rem;
+    padding: 0;
+    *zoom: 1; }
+    #main-portfolio .project-technologies:before, #main-portfolio .project-technologies:after {
+      content: " ";
+      display: table; }
+    #main-portfolio .project-technologies:after {
+      clear: both; }
+    @media screen and (min-width: 1025px) {
+      #main-portfolio .project-technologies {
+        display: block;
+        position: relative;
+        text-align: center; } }
+    #main-portfolio .project-technologies li {
+      border: 1px solid rgba(36, 149, 186, 0.3);
+      border-radius: 2px;
+      color: #2495ba;
+      display: inline-block;
+      line-height: 1.5em;
+      margin-right: .5rem;
+      margin-bottom: .3rem;
+      padding: 0rem .4rem; }
   #main-portfolio .project-description {
     color: #244c59;
     font-size: 1.1rem; }
@@ -215,6 +241,9 @@ a:hover {
         margin: 0;
         margin-right: 4%;
         width: 48%; } }
+    #main-portfolio .project-description p {
+      margin: 0;
+      margin-bottom: .5rem; }
   #main-portfolio .image-wrapper {
     margin-bottom: 1rem;
     max-width: 100%; }
@@ -228,7 +257,7 @@ a:hover {
       max-width: 100%;
       box-shadow: 1px 1px 1px rgba(36, 76, 89, 0.3); }
   #main-portfolio .project-link {
-    color: #2495ba;
+    color: #a93d20;
     display: block;
     text-align: center; }
     #main-portfolio .project-link:hover {

@@ -64,9 +64,36 @@
     }
   }
 
+  .project-technologies {
+    font-size: 1rem;
+    list-style: none;
+    margin: 0;
+    margin-bottom: 1.5rem;
+    padding: 0;
+    @include clearfix;
+
+    @include media($desktop) {
+      display: block;
+      position: relative;
+      text-align: center;
+    }
+
+    li {
+      border: 1px solid rgba($blue, .3);
+      border-radius: 2px;
+      color: $blue;
+      display: inline-block;
+      line-height: 1.5em;
+      margin-right: .5rem;
+      margin-bottom: .3rem;
+      padding: 0rem .4rem;
+    }
+  }
+
   .project-description {
     color: $darkBlue;
     font-size: 1.1rem;
+
 
     @include media($tablet) {
       font-size: 1.4rem;
@@ -78,6 +105,11 @@
       margin: 0;
       margin-right: 4%;
       width: 48%;
+    }
+
+    p {
+      margin: 0;
+      margin-bottom: .5rem;
     }
   }
 
@@ -99,7 +131,7 @@
   }
 
   .project-link {
-    color: $blue;
+    color: $red;
     display: block;
     text-align: center;
 
