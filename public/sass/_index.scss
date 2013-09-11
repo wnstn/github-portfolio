@@ -1,3 +1,65 @@
 #main-portfolio {
+  margin-top: 10rem;
+  width: 100%;
+
+  @include media($tablet) {
+    margin-top: 13rem;
+  }
+
+  .project {
+    border-bottom: 1px dotted $blue;
+    margin: 0 1.5rem;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    @include media($tablet) {
+      margin: 0 2rem;
+      margin-bottom: 5rem;
+      padding-bottom: 3rem;
+    }
+
+  }
+
+  .project-title {
+    color: $blue;
+    font-size: 2rem;
+
+    @include media($tablet) {
+      font-size: 2.5rem;
+    }
+  }
+
+  .project-description {
+    color: $darkBlue;
+    font-size: 1.1rem;
+
+    @include media($tablet) {
+      font-size: 1.4rem;
+    }
+  }
+
+  .image-wrapper {
+    margin-bottom: 1rem;
+    max-width: 100%;
+
+    img {
+      max-width: 100%;
+      @include box-shadow(1px 1px 1px rgba($darkBlue, .3));
+    }
+  }
+
+  .project-link {
+    color: $blue;
+    display: block;
+    text-align: center;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 
 }

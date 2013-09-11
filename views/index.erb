@@ -1,6 +1,45 @@
 <%= erb :'utilities/nav' %>
 
 <section id="main-portfolio">
+  <article class="project">
+    <h1 class="project-title">re:action</h1>
+    <p class="project-description">I had about two weeks to design and code this site. Thankfully, it wasn't from scratch, as we had a Node app written for Streamweaver we duplicated for the backend. But on the frontend, the only art direction I was given was app screenshots - after that I was given free reign. In two weeks I designed and coded a marketing index page, a Video#Show template, and the password reset pages.</p>
+    <a class="image-wrapper" href="http://reaction.streamweaver.com">
+      <img src="/images/reaction-app.jpg" />
+    </a>
+    <a href="http://reaction.streamweaver.com" class="project-link" target="_blank">homepage</a>
+    <a href="http://reaction.streamweaver.com/v/32ea7aa5-783d-4aa6-a130-a231001d8542" class="project-link" target="_blank">video watch page</a>
+    <a href="http://reaction.streamweaver.com/Account/Password/resetrequest" class="project-link" target="_blank">password reset page</a>
+  </article>
 
+  <article class="project">
+    <h1 class="project-title">streamweaver</h1>
+    <p class="project-description">Streamweaver is an iOS app that weaves together video from multiple iOS devices. After they launched, they realized they needed a way for users to share and watch videos via the web. I joined the team part-time to develop a website for that very purpose. The requirements were to move fast, and because they didn't give me leeway on backend, I wrote a custom, client-side app that could be included once and used across all views. <a href="http://watch.streamweaver.com" target="_blank">Watch.streamweaver.com</a> isn't exactly elegant, but it hit all the deadlines within the scope I was given. Right now, we're days away from a complete rewrite as a Node.js app.</p>
+    <a class="image-wrapper" href="http://watch.streamweaver.com/show.html?video=16e92792-a158-4b56-80bb-a2350137c45e" target="_blank">
+      <img src="/images/streamweaver.jpg" />
+    </a>
+    <a href="http://watch.streamweaver.com" target="_blank" class="project-link">homepage</a>
+  </article>
+
+  <article class="project">
+    <h1 class="project-title">centresource</h1>
+    <p class="project-description">centresource is the preeminent Rails agency in Nashville, TN. I worked there for 2 years, doing front-end development. We used primarily SCSS, Coffeescript, and industry-standard practices for Rails front end dev. Towards the end of my time at centresource, I spent a week creating an internal tool for generating email signatures. I used class-based coffeescript to write a decoupled tool for taking in an input, and outputting email-friendly html, and then used CSS3/SCSS mixins to polish up the user-facing page. The result was a fun-to-use and very pragmatic tool for internal branding.</p>
+    <p class="project-description">The centresource site itself was a team effort, to which I contributed. We used advanced SCSS like for and each loops, placeholders and mixins to help speed up development and make it easy to hack on for the life of the project.</p>
+    <a class="image-wrapper" href="http://centresource.com/email-signatures" target="_blank">
+      <img src="/images/centresource.jpg" />
+    </a>
+    <a href="http://centresource.com/email-signatures" target="_blank" class="project-link">email generator</a>
+    <a href="http://centresource.com" target="_blank" class="project-link">homepage</a>
+  </article>
+
+<article class="project">
+    <h1 class="project-title">ouradventure.in</h1>
+    <p class="project-description">In April my wife and my son and I set out on an adventure. Due to unforeseeable circumstances, that adventure has changed forms a lot. But when we first left, I created a single-page site using Sinatra and Wufoo to let friends give us recommendations for places to visit along the way. The site is a little outdated now, but everything still works and the code is public on Github.</p>
+    <a class="image-wrapper" href="http://ouradventure.in" target="_blank">
+      <img src="/images/ouradventure.jpg" />
+    </a>
+    <a href="http://ouradventure.in" target="_blank" class="project-link">homepage</a>
+    <a href="https://github.com/wnstn/adventure-form" target="_blank" class="project-link">github repo</a>
+  </article>
 
 </section>

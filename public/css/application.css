@@ -109,11 +109,11 @@ a:hover {
   position: fixed;
   text-align: center;
   width: 100%;
-  box-shadow: inset 0px -2px 5px rgba(0, 0, 0, 0.3); }
+  box-shadow: 0px -2px 5px white; }
   @media screen and (min-width: 481px) {
     #nav-wrapper {
       padding: .4rem;
-      box-shadow: inset 0px -5px 10px rgba(0, 0, 0, 0.3); } }
+      box-shadow: 0px 5px 10px white; } }
   @media screen and (min-width: 800px) {
     #nav-wrapper {
       bottom: 0;
@@ -151,3 +151,46 @@ a:hover {
       #nav-wrapper .name {
         font-size: 3.2rem;
         line-height: 2.8rem; } }
+
+#main-portfolio {
+  margin-top: 10rem;
+  width: 100%; }
+  @media screen and (min-width: 481px) {
+    #main-portfolio {
+      margin-top: 13rem; } }
+  #main-portfolio .project {
+    border-bottom: 1px dotted #2495ba;
+    margin: 0 1.5rem;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem; }
+    #main-portfolio .project:last-child {
+      border-bottom: none; }
+    @media screen and (min-width: 481px) {
+      #main-portfolio .project {
+        margin: 0 2rem;
+        margin-bottom: 5rem;
+        padding-bottom: 3rem; } }
+  #main-portfolio .project-title {
+    color: #2495ba;
+    font-size: 2rem; }
+    @media screen and (min-width: 481px) {
+      #main-portfolio .project-title {
+        font-size: 2.5rem; } }
+  #main-portfolio .project-description {
+    color: #244c59;
+    font-size: 1.1rem; }
+    @media screen and (min-width: 481px) {
+      #main-portfolio .project-description {
+        font-size: 1.4rem; } }
+  #main-portfolio .image-wrapper {
+    margin-bottom: 1rem;
+    max-width: 100%; }
+    #main-portfolio .image-wrapper img {
+      max-width: 100%;
+      box-shadow: 1px 1px 1px rgba(36, 76, 89, 0.3); }
+  #main-portfolio .project-link {
+    color: #2495ba;
+    display: block;
+    text-align: center; }
+    #main-portfolio .project-link:hover {
+      text-decoration: underline; }
