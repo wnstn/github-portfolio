@@ -58,7 +58,7 @@ a:hover {
 
 .tablet {
   display: none; }
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 490px) {
     .tablet {
       display: inline; } }
   @media screen and (min-width: 800px) {
@@ -82,7 +82,7 @@ a:hover {
   .quasi-button:visited:hover,
   .quasi-button:hover:hover {
     border: 1px solid #c3e85f; }
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 490px) {
     .quasi-button,
     .quasi-button:link,
     .quasi-button:active,
@@ -92,7 +92,7 @@ a:hover {
 
 .mobile-only {
   display: inline; }
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 490px) {
     .mobile-only {
       display: none; } }
 
@@ -110,7 +110,7 @@ a:hover {
   text-align: center;
   width: 100%;
   box-shadow: 0px -2px 5px white; }
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 490px) {
     #nav-wrapper {
       padding: .4rem;
       position: fixed;
@@ -131,20 +131,21 @@ a:hover {
     font-weight: 300;
     font-size: 1.5rem;
     margin: 0;
-    margin-top: .2rem; }
-    @media screen and (min-width: 481px) {
+    margin-top: .2rem;
+    text-transform: none; }
+    @media screen and (min-width: 490px) {
       #nav-wrapper .greeting {
         margin-top: .3rem;
         margin-bottom: .5rem; } }
     @media screen and (min-width: 800px) {
       #nav-wrapper .greeting {
-        font-size: 2rem;
+        font-size: 1.8rem;
         margin: 1rem 0; } }
   #nav-wrapper .name {
     color: #2495ba;
     font-size: 2.5rem;
     margin: .2rem 0; }
-    @media screen and (min-width: 481px) {
+    @media screen and (min-width: 490px) {
       #nav-wrapper .name {
         margin-bottom: .5rem; } }
     @media screen and (min-width: 800px) {
@@ -158,7 +159,7 @@ a:hover {
 #main-portfolio {
   margin-top: 0;
   width: 100%; }
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 490px) {
     #main-portfolio {
       margin-top: 13rem; } }
   @media screen and (min-width: 800px) {
@@ -180,7 +181,7 @@ a:hover {
       /* 2 */ }
     #main-portfolio .project:after {
       clear: both; }
-    @media screen and (min-width: 481px) {
+    @media screen and (min-width: 490px) {
       #main-portfolio .project {
         margin: 0 2rem;
         margin-bottom: 5rem;
@@ -192,7 +193,7 @@ a:hover {
   #main-portfolio .project-title {
     color: #2495ba;
     font-size: 2rem; }
-    @media screen and (min-width: 481px) {
+    @media screen and (min-width: 490px) {
       #main-portfolio .project-title {
         font-size: 2.5rem; } }
     @media screen and (min-width: 800px) {
@@ -233,7 +234,7 @@ a:hover {
   #main-portfolio .project-description {
     color: #244c59;
     font-size: 1.1rem; }
-    @media screen and (min-width: 481px) {
+    @media screen and (min-width: 490px) {
       #main-portfolio .project-description {
         font-size: 1.4rem; } }
     @media screen and (min-width: 1025px) {
