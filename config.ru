@@ -5,11 +5,14 @@ use Rack::Static,
 require 'rubygems'
 require 'bundler'
 Bundler.require(:default)
-require 'rack-livereload'
 
 require './portfolio'
 
-# live reload
-use Rack::LiveReload
+if ENV['RACK_ENV'] != 'production'
+  require 'rack-livereload'
+  # live reload
+  use Rack::LiveReload
+end
 
 run Portfolio.new
+
