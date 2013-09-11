@@ -1,0 +1,42 @@
+@import "neat/neat-helpers";
+
+$base-value: 16;
+$max-width: em(1024);
+
+/* BOURBON AND NEAT VARIABLES */
+
+// $visual-grid: true;
+
+/* Media Queries */
+// Design is mobile first
+
+$tablet: min-width 700px;
+$desktop: min-width 850px;
+
+/* TYPOGRAPHY */
+
+$serif-font: "fanwood",serif; // weights: 300, 300 italic, 900
+$sans-serif-font: "brandon-grotesque", sans-serif; // weights: 400, 400 italic
+
+$base-font-family: $serif-font;
+$header-font-family: $sans-serif-font;
+$header-font-weight: 900;
+
+$base-font-size: em(20, $base-value);
+$base-line-height: em(24, $base-value);
+
+/* COLORS */
+
+$blue: #2495ba;
+$darkBlue: #244c59;
+$red: #a93d20;
+$green: #c3e85f;
+
+
+$black:         #000;
+$gray-darker:   #222;
+$gray-dark:     #333;
+$gray:          #555;
+$gray-light:    #999;
+$gray-lighter:  #eee;
+$white:         #fff;

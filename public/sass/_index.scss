@@ -1,0 +1,174 @@
+// reusable classes
+
+.title {
+  color: $white;
+  line-height: 1em;
+  text-align: center;
+  font-size: 0%;
+}
+
+.circle {
+  background-color: $red;
+  border-radius: 100%;
+  display: inline-block;
+  position: absolute;
+  padding-top: 3em;
+  z-index: 1;
+  width: 200px;
+  height: 200px;
+  opacity: 0;
+  @include transform(scale(3,3));
+}
+
+.divider {
+  opacity: 0;
+  @include transform(scaleX(0));
+  width: 40%;
+  top: 10em;
+  position: relative;
+  z-index: 0;
+}
+
+.live {
+  .circle {
+    opacity: 1;
+    @include transform(scaleX(1));
+    @include transition(all .2s ease-out .6s);
+  }
+
+  .title {
+    font-size: 100%;
+    @include transition(all .3s ease-in-out .8s);
+  }
+
+  .divider {
+    height: 2px;
+    background-color: $darkBlue;
+    opacity: 1;
+    left: 30%;
+    @include transform(scaleX(1));
+    @include transition(all .3s ease-in-out .2s);
+  }
+}
+
+#code {
+  left: 20%;
+  margin-top: 5em;
+  @include transform(rotate(-6deg));
+}
+
+#designer {
+  left: 60%;
+  margin-top: 5em;
+  @include transform(rotate(6deg));
+}
+
+#name {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  left: 37%;
+  top: 8.5em;
+  height: 1.4em;
+  width: 300px;
+
+  .first,
+  .last {
+    margin: 0;
+    font-size: 150%;
+    line-height: 1em;
+    display: inline-block;
+    position: absolute;
+    top: 2em;
+  }
+
+  .last {
+    left: 5em;
+  }
+}
+
+.live {
+
+  #name {
+    .first {
+      top: 0em;
+      @include transition(all .2s ease-out .3s);
+    }
+    .last {
+      top: 0em;
+      left: 5em;
+      @include transition(all .2s ease-out .4s);
+    }
+  }
+}
+
+#bars2 {
+  display: inline-block;
+  background-color: $blue;
+  height: 3rem;
+  width: 1%;
+  position: absolute;
+  bottom: 0em;
+
+  &:before {
+    content: "";
+    display: inline-block;
+    background-color: darken($blue, 10%);
+    height: 3rem;
+    top: 0;
+    position: relative;
+    margin-top: 0rem;
+    width: 100%;
+  }
+
+  &:after {
+    content: "";
+    display: inline-block;
+    background-color: darken($blue, 20%);
+    height: 3rem;
+    margin-top: -.6rem;
+    position: relative;
+    width: 100%;
+  }
+}
+
+.live {
+
+  #bars2 {
+    display: inline-block;
+    background-color: $blue;
+    height: 3rem;
+    width: 55%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 5em;
+    @include transition(all .2s ease-out);
+
+    &:before {
+      content: "";
+      display: inline-block;
+      background-color: darken($blue, 10%);
+      height: 3rem;
+      top: 0;
+      float: right;
+      right: -4%;
+      position: relative;
+      margin-top: 3rem;
+      width: 108%;
+      @include transition(all .2s ease-out .1s);
+    }
+
+    &:after {
+      content: "";
+      display: inline-block;
+      background-color: darken($blue, 20%);
+      height: 3rem;
+      float: right;
+      right: -8%;
+      margin-top: 0rem;
+      position: relative;
+      width: 116%;
+      @include transition(all .2s ease-out .2s);
+    }
+  }
+}

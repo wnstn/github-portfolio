@@ -1,0 +1,138 @@
+@import "neat/neat";
+
+
+$grid-columns: 12;
+
+// Default styles for the site:
+body {
+  color: $gray-dark;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: 400;
+  line-height: $base-line-height;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: $header-font-family;
+  font-weight: $header-font-weight;
+  text-transform: uppercase;
+}
+
+h1 { font-size: 3em; }
+h2 { font-size: 2.4em; }
+h3 { font-size: 1.8em; }
+h4 { font-size: 1.4em; }
+
+p {
+  line-height: 1.3em;
+}
+
+a,
+a:active,
+a:link,
+a:visited,
+a:hover {
+  text-decoration: none;
+  color: $red;
+}
+
+
+// Body styles
+
+.home {
+  background: url(/images/bg.jpg) repeat top left;
+}
+
+#bars1 {
+  display: inline-block;
+  background-color: $blue;
+  height: 3rem;
+  width: 1%;
+  left: 0;
+  position: relative;
+  margin-bottom: 5.5rem;
+  top: 1em;
+
+  &:before {
+    content: "";
+    display: inline-block;
+    background-color: darken($blue, 10%);
+    height: 3rem;
+    top: 0;
+    position: relative;
+    margin-top: 3rem;
+    width: 100%;
+  }
+
+  &:after {
+    content: "";
+    display: inline-block;
+    background-color: darken($blue, 20%);
+    height: 3rem;
+    margin-top: -.6rem;
+    position: relative;
+    width: 100%;
+  }
+
+  .name {
+    color: $white;
+    font-weight: 300;
+    font-size: .1em;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    // top: -2.5rem;
+    top: .6rem;
+    right: 0;
+  }
+}
+
+.live {
+
+  #bars1 {
+    display: inline-block;
+    background-color: $blue;
+    height: 3rem;
+    width: 40%;
+    left: 0;
+    position: relative;
+    margin-bottom: 5.5rem;
+    top: 1em;
+    @include transition(all .2s ease-out);
+
+    &:before {
+      content: "";
+      display: inline-block;
+      background-color: darken($blue, 10%);
+      height: 3rem;
+      top: 0;
+      margin-top: 3rem;
+      width: 90%;
+      @include transition(all .2s ease-out .2s);
+    }
+
+    &:after {
+      content: "";
+      display: inline-block;
+      background-color: darken($blue, 20%);
+      height: 3rem;
+      margin-top: -.6rem;
+      width: 80%;
+      @include transition(all .2s ease-out .2s);
+    }
+
+    .name {
+      color: $white;
+      font-weight: 300;
+      font-size: 3em;
+      margin: 0;
+      opacity: 1;
+      position: absolute;
+      top: .6rem;
+      left: .6em;
+
+      @include transition(all .2s ease-out);
+    }
+  }
+}

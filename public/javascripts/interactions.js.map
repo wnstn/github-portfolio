@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "interactions.js",
+  "sourceRoot": "public/javascripts",
+  "sources": [
+    "interactions.coffee"
+  ],
+  "names": [],
+  "mappings": "AAAA;CAAA,CAAA,CAAE,MAAA;CACA,OAAA,SAAA;CAAA,EAAa,CAAb,KAAa,CAAb;CACE,GAAA,MAAA;CAAA,EAAO,CAAP,EAAA;CAAA,GACI,EAAJ,EAAA;CACO,IAAP,CAAM,MAAN,CAAA;CAHF,IAAa;CAME,CAAuB,CAA9B,EAAR,CAAc,IAAN,CAAR;CAPF,EAAE;CAAF"
+}
