@@ -9,3 +9,17 @@
     margin-left: 0;
   }
 }
+
+@mixin pill($color, $fontSize:"") {
+  border: 1px solid rgba($color, .3);
+  border-radius: $pill-radii;
+  color: $color;
+  display: inline-block;
+  line-height: 1.5em;
+  margin-right: .5rem;
+  margin-bottom: .3rem;
+  padding: 0rem .4rem;
+  @if $fontSize != "" {
+    font-size: $fontSize;
+  }
+}

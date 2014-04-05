@@ -34,13 +34,13 @@ a:link,
 a:visited,
 a:hover {
   text-decoration: none;
-  color: $red;
+  color: darken($green, 25%);
 }
 
 // Reusable classes
 
 .accent {
-  color: $red;
+  color: $blue;
   font-family: $header-font-family;
 }
 
@@ -89,5 +89,6 @@ a:hover {
 // Body styles
 
 .home {
-  background: url(/images/bg.jpg) repeat top left;
+  // background: url(/images/bg.jpg) repeat top left;
+  background-color: lighten($blue, 35%);
 }

@@ -2,6 +2,7 @@
 /* Media Queries */
 /* TYPOGRAPHY */
 /* COLORS */
+/* Radii */
 .hide {
   display: none; }
 
@@ -50,10 +51,10 @@ a:link,
 a:visited,
 a:hover {
   text-decoration: none;
-  color: #a93d20; }
+  color: #86ae19; }
 
 .accent {
-  color: #a93d20;
+  color: #2495ba;
   font-family: "brandon-grotesque", sans-serif; }
 
 .tablet {
@@ -97,7 +98,7 @@ a:hover {
       display: none; } }
 
 .home {
-  background: url(/images/bg.jpg) repeat top left; }
+  background-color: #a3dbed; }
 
 #nav-wrapper {
   background-color: white;
@@ -113,16 +114,16 @@ a:hover {
   @media screen and (min-width: 490px) {
     #nav-wrapper {
       padding: .4rem;
-      position: fixed;
-      top: 0;
-      box-shadow: 0px 5px 10px white; } }
+      top: 0; } }
   @media screen and (min-width: 800px) {
     #nav-wrapper {
       bottom: 0;
+      overflow-y: scroll;
       padding: .8rem;
+      position: fixed;
       padding-top: 5rem;
       width: 25%;
-      box-shadow: inset -5px 0px 10px rgba(0, 0, 0, 0.3); } }
+      box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.1); } }
   @media screen and (min-width: 1025px) {
     #nav-wrapper {
       padding: 1rem;
@@ -131,7 +132,7 @@ a:hover {
     font-weight: 300;
     font-size: 1.5rem;
     margin: 0;
-    margin-top: .2rem;
+    margin-top: 1rem;
     text-transform: none; }
     @media screen and (min-width: 490px) {
       #nav-wrapper .greeting {
@@ -155,13 +156,26 @@ a:hover {
       #nav-wrapper .name {
         font-size: 3.2rem;
         line-height: 2.8rem; } }
+  #nav-wrapper .bio {
+    font-size: 1.2rem;
+    margin: .5em; }
+  #nav-wrapper .technologies {
+    padding: 0;
+    margin: .5em 0; }
+    #nav-wrapper .technologies li {
+      border: 1px solid rgba(36, 149, 186, 0.3);
+      border-radius: 2px;
+      color: #2495ba;
+      display: inline-block;
+      line-height: 1.5em;
+      margin-right: .5rem;
+      margin-bottom: .3rem;
+      padding: 0rem .4rem;
+      font-size: 1rem; }
 
 #main-portfolio {
   margin-top: 0;
   width: 100%; }
-  @media screen and (min-width: 490px) {
-    #main-portfolio {
-      margin-top: 13rem; } }
   @media screen and (min-width: 800px) {
     #main-portfolio {
       width: 75%;
@@ -223,16 +237,16 @@ a:hover {
         position: relative;
         text-align: center; } }
     #main-portfolio .project-technologies li {
-      border: 1px solid rgba(36, 149, 186, 0.3);
+      border: 1px solid rgba(36, 76, 89, 0.3);
       border-radius: 2px;
-      color: #2495ba;
+      color: #244c59;
       display: inline-block;
       line-height: 1.5em;
       margin-right: .5rem;
       margin-bottom: .3rem;
       padding: 0rem .4rem; }
   #main-portfolio .project-description {
-    color: #244c59;
+    color: #222222;
     font-size: 1.1rem; }
     @media screen and (min-width: 490px) {
       #main-portfolio .project-description {
@@ -260,7 +274,7 @@ a:hover {
       max-width: 100%;
       box-shadow: 1px 1px 1px rgba(36, 76, 89, 0.3); }
   #main-portfolio .project-link {
-    color: #a93d20;
+    color: #86ae19;
     display: block;
     text-align: center; }
     #main-portfolio .project-link:hover {
