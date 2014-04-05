@@ -2,9 +2,9 @@
 # More info at https://github.com/guard/guard#readme
 
 guard 'livereload' do
-  watch(%r{^portfolio\.rb})
   watch(%r{views/.+\.(erb)$})
   watch(%r{public/.+\.(scss|javascripts|coffee|js)})
+  watch(%r{^portfolio\.rb})
 end
 
 guard 'sass', :input => 'public/sass', :output => 'public/css'
