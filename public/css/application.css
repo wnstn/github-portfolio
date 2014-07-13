@@ -17,6 +17,9 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+html {
+  height: 100%; }
+
 body {
   color: #333333;
   font-family: "fanwood", serif;
@@ -98,189 +101,30 @@ a:hover {
       display: none; } }
 
 .home {
-  background-color: #a3dbed; }
+  background-color: white; }
 
-#nav-wrapper {
-  background-color: white;
-  color: #244c59;
-  float: left;
-  left: 0;
-  top: 0;
-  margin: 0;
-  position: relative;
-  text-align: center;
-  width: 100%;
-  box-shadow: 0px -2px 5px white; }
-  @media screen and (min-width: 490px) {
-    #nav-wrapper {
-      padding: .4rem;
-      top: 0; } }
+#greeting {
+  text-align: center; }
   @media screen and (min-width: 800px) {
-    #nav-wrapper {
-      bottom: 0;
-      overflow-y: scroll;
-      padding: .8rem;
-      position: fixed;
-      padding-top: 5rem;
-      width: 25%;
-      box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.1); } }
-  @media screen and (min-width: 1025px) {
-    #nav-wrapper {
-      padding: 1rem;
-      padding-top: 12rem; } }
-  #nav-wrapper .greeting {
-    font-weight: 300;
-    font-size: 1.5rem;
-    margin: 0;
-    margin-top: 1rem;
-    text-transform: none; }
-    @media screen and (min-width: 490px) {
-      #nav-wrapper .greeting {
-        margin-top: .3rem;
-        margin-bottom: .5rem; } }
-    @media screen and (min-width: 800px) {
-      #nav-wrapper .greeting {
-        font-size: 1.8rem;
-        margin: 1rem 0; } }
-  #nav-wrapper .name {
-    color: #2495ba;
-    font-size: 2.5rem;
-    margin: .2rem 0; }
-    @media screen and (min-width: 490px) {
-      #nav-wrapper .name {
-        margin-bottom: .5rem; } }
-    @media screen and (min-width: 800px) {
-      #nav-wrapper .name {
-        line-height: 2rem; } }
-    @media screen and (min-width: 1025px) {
-      #nav-wrapper .name {
-        font-size: 3.2rem;
-        line-height: 2.8rem; } }
-  #nav-wrapper .bio {
-    font-size: 1.2rem;
-    margin: .5em; }
-  #nav-wrapper .technologies {
-    padding: 0;
-    margin: .5em 0; }
-    #nav-wrapper .technologies li {
-      border: 1px solid rgba(36, 149, 186, 0.3);
-      border-radius: 2px;
-      color: #2495ba;
-      display: inline-block;
-      line-height: 1.5em;
-      margin-right: .5rem;
-      margin-bottom: .3rem;
-      padding: 0rem .4rem;
-      font-size: 1rem; }
+    #greeting {
+      margin-top: 100px; } }
+  #greeting h3 {
+    color: #2495ba; }
 
-#main-portfolio {
-  margin-top: 0;
-  width: 100%; }
+.copy {
+  width: 90%;
+  margin: 0 auto;
+  text-align: left; }
   @media screen and (min-width: 800px) {
-    #main-portfolio {
-      width: 75%;
-      margin-left: 25%;
-      margin-top: 2rem; } }
-  #main-portfolio .project {
-    border-bottom: 1px dotted #2495ba;
-    margin: 0 1.5rem;
-    margin-bottom: 3rem;
-    padding-bottom: 1rem; }
-    #main-portfolio .project:last-child {
-      border-bottom: none; }
-    #main-portfolio .project:before, #main-portfolio .project:after {
-      content: " ";
-      /* 1 */
-      display: table;
-      /* 2 */ }
-    #main-portfolio .project:after {
-      clear: both; }
-    @media screen and (min-width: 490px) {
-      #main-portfolio .project {
-        margin: 0 2rem;
-        margin-bottom: 5rem;
-        padding-bottom: 3rem; } }
-    @media screen and (min-width: 800px) {
-      #main-portfolio .project {
-        margin-bottom: 4rem;
-        padding-bottom: 2rem; } }
-  #main-portfolio .project-title {
-    color: #2495ba;
-    font-size: 2rem; }
-    @media screen and (min-width: 490px) {
-      #main-portfolio .project-title {
-        font-size: 2.5rem; } }
-    @media screen and (min-width: 800px) {
-      #main-portfolio .project-title {
-        font-size: 3rem; } }
-    @media screen and (min-width: 1025px) {
-      #main-portfolio .project-title {
-        display: block;
-        text-align: center;
-        width: 100%;
-        float: left; } }
-  #main-portfolio .project-technologies {
-    font-size: 1rem;
-    list-style: none;
-    margin: 0;
-    margin-bottom: 1.5rem;
-    padding: 0;
-    *zoom: 1; }
-    #main-portfolio .project-technologies:before, #main-portfolio .project-technologies:after {
-      content: " ";
-      display: table; }
-    #main-portfolio .project-technologies:after {
-      clear: both; }
-    @media screen and (min-width: 1025px) {
-      #main-portfolio .project-technologies {
-        display: block;
-        position: relative;
-        text-align: center; } }
-    #main-portfolio .project-technologies li {
-      border: 1px solid rgba(36, 76, 89, 0.3);
-      border-radius: 2px;
-      color: #244c59;
-      display: inline-block;
-      line-height: 1.5em;
-      margin-right: .5rem;
-      margin-bottom: .3rem;
-      padding: 0rem .4rem; }
-  #main-portfolio .project-description {
-    color: #222222;
-    font-size: 1.1rem; }
-    @media screen and (min-width: 490px) {
-      #main-portfolio .project-description {
-        font-size: 1.4rem; } }
-    @media screen and (min-width: 1025px) {
-      #main-portfolio .project-description {
-        display: block;
-        float: left;
-        margin: 0;
-        margin-right: 4%;
-        width: 48%; } }
-    #main-portfolio .project-description p {
-      margin: 0;
-      margin-bottom: .5rem; }
-  #main-portfolio .image-wrapper {
-    margin-bottom: 1rem;
-    max-width: 100%; }
-    @media screen and (min-width: 1025px) {
-      #main-portfolio .image-wrapper {
-        float: left;
-        margin: 0;
-        margin-top: 1rem;
-        width: 48%; } }
-    #main-portfolio .image-wrapper img {
-      max-width: 100%;
-      box-shadow: 1px 1px 1px rgba(36, 76, 89, 0.3); }
-  #main-portfolio .project-link {
-    color: #86ae19;
+    .copy {
+      width: 55%; } }
+
+@media screen and (min-width: 800px) {
+  .third {
+    text-align: center;
     display: block;
-    text-align: center; }
-    #main-portfolio .project-link:hover {
-      text-decoration: underline; }
-    @media screen and (min-width: 1025px) {
-      #main-portfolio .project-link {
-        display: block;
-        float: left;
-        width: 100%; } }
+    float: left;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    .third:last-child {
+      margin-right: 0; } }
