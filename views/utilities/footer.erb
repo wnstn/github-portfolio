@@ -14,10 +14,13 @@
   if (loadTimeStart) {
     window.onload = function (e) {
       loadTime = e.timeStamp - loadTimeStart;
-      console.log('loaded', loadTime);
+      logEvent();
     }
+  } else {
+    logEvent();
   }
 
+  function logEvent() {
     var visit = {
       page: "Winston.cc",
       referrer: document.referrer,
@@ -29,4 +32,5 @@
     }
 
     Keen.addEvent('visit', visit);
+  }
 </script>
