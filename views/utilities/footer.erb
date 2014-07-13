@@ -12,10 +12,10 @@
   var loadTime = 0;
 
   if (loadTimeStart) {
-    window.onload = function (e) {
+    window.addEventListener("load", function (e) {
       loadTime = e.timeStamp - loadTimeStart;
       logEvent();
-    }
+    });
   } else {
     logEvent();
   }
