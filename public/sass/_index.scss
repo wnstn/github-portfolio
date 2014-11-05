@@ -1,24 +1,37 @@
 
 #greeting {
   text-align: center;
+  margin-bottom: 3em;
+  @include outer-container();
 
   @include media($tablet-wide) {
-    margin-top: 100px;
+    margin-top: 50px;
   }
 
   h3 {
     color: $blue;
+    text-shadow:  2px 1px 0px rgba($gray-dark, .5);
+
+    @include media($tablet-wide) {
+      text-shadow: none;
+    }
   }
 }
 
 .copy {
+  background-color: $white;
+  font-size: 1.1rem;
+  color: lighten($gray, 10%);
   width: 90%;
   margin: 0 auto;
   text-align: left;
+  padding: 2em;
+  @include clearfix;
 
   @include media($tablet-wide) {
-    // text-align: center;
-    width: 55%;
+    @include span-columns(6 of 12);
+    @include shift(3);
+
   }
 }
 

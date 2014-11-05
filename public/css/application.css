@@ -218,7 +218,7 @@ html {
 
 body {
   color: #333333;
-  font-family: "fanwood", serif;
+  font-family: "chaparral-pro", serif;
   font-size: 1.25em;
   font-weight: 400;
   line-height: 1.5em;
@@ -296,24 +296,51 @@ a:hover {
     .mobile-only {
       display: none; } }
 
-.home {
-  background-color: white; }
-
 #greeting {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 3em;
+  *zoom: 1;
+  max-width: 64em;
+  margin-left: auto;
+  margin-right: auto; }
+  #greeting:before, #greeting:after {
+    content: " ";
+    display: table; }
+  #greeting:after {
+    clear: both; }
   @media screen and (min-width: 800px) {
     #greeting {
-      margin-top: 100px; } }
+      margin-top: 50px; } }
   #greeting h3 {
-    color: #2495ba; }
+    color: #2495ba;
+    text-shadow: 2px 1px 0px rgba(51, 51, 51, 0.5); }
+    @media screen and (min-width: 800px) {
+      #greeting h3 {
+        text-shadow: none; } }
 
 .copy {
+  background-color: white;
+  font-size: 1.1rem;
+  color: #6e6e6e;
   width: 90%;
   margin: 0 auto;
-  text-align: left; }
+  text-align: left;
+  padding: 2em;
+  *zoom: 1; }
+  .copy:before, .copy:after {
+    content: " ";
+    display: table; }
+  .copy:after {
+    clear: both; }
   @media screen and (min-width: 800px) {
     .copy {
-      width: 55%; } }
+      display: block;
+      float: left;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin-left: 25.58941%; }
+      .copy:last-child {
+        margin-right: 0; } }
 
 @media screen and (min-width: 800px) {
   .third {
