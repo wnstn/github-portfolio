@@ -44,51 +44,51 @@ a:hover {
 
 // Reusable classes
 
-.accent {
-  color: $blue;
-  font-family: $header-font-family;
-}
+// .accent {
+//   color: $blue;
+//   font-family: $header-font-family;
+// }
 
-.tablet {
-  display: none;
+// .tablet {
+//   display: none;
 
-  @include media($tablet) {
-    display: inline;
-  }
+//   @include media($tablet) {
+//     display: inline;
+//   }
 
-  @include media($tablet-wide) {
-    display: inline;
-  }
-}
+//   @include media($tablet-wide) {
+//     display: inline;
+//   }
+// }
 
-.quasi-button,
-.quasi-button:link,
-.quasi-button:active,
-.quasi-button:visited,
-.quasi-button:hover {
-  border: 1px solid rgba($green, .3);
-  border-radius: 2px;
-  color: darken($green, 20%);
-  // display: inline-block;
-  font-size: 1rem;
-  margin: 1rem 0;
-  padding: 0 .3rem;
+// .quasi-button,
+// .quasi-button:link,
+// .quasi-button:active,
+// .quasi-button:visited,
+// .quasi-button:hover {
+//   border: 1px solid rgba($green, .3);
+//   border-radius: 2px;
+//   color: darken($green, 20%);
+//   // display: inline-block;
+//   font-size: 1rem;
+//   margin: 1rem 0;
+//   padding: 0 .3rem;
 
-  &:hover {
-    border: 1px solid $green;
-  }
+//   &:hover {
+//     border: 1px solid $green;
+//   }
 
-  @include media($tablet) {
-    font-size: 1.5rem;
-  }
-}
+//   @include media($tablet) {
+//     font-size: 1.5rem;
+//   }
+// }
 
-.mobile-only {
-  display: inline;
+// .mobile-only {
+//   display: inline;
 
-  @include media($tablet) {
-    display: none;
-  }
-}
+//   @include media($tablet) {
+//     display: none;
+//   }
+// }
 
 // Body styles

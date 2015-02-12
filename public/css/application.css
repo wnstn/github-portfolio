@@ -218,7 +218,7 @@ html {
 
 body {
   color: #333333;
-  font-family: "chaparral-pro", serif;
+  font-family: "chaparral-pro-display", serif;
   font-size: 1.25em;
   font-weight: 400;
   line-height: 1.5em;
@@ -252,50 +252,6 @@ a:hover {
   text-decoration: none;
   color: #86ae19; }
 
-.accent {
-  color: #2495ba;
-  font-family: "brandon-grotesque", sans-serif; }
-
-.tablet {
-  display: none; }
-  @media screen and (min-width: 490px) {
-    .tablet {
-      display: inline; } }
-  @media screen and (min-width: 800px) {
-    .tablet {
-      display: inline; } }
-
-.quasi-button,
-.quasi-button:link,
-.quasi-button:active,
-.quasi-button:visited,
-.quasi-button:hover {
-  border: 1px solid rgba(195, 232, 95, 0.3);
-  border-radius: 2px;
-  color: #97c51c;
-  font-size: 1rem;
-  margin: 1rem 0;
-  padding: 0 .3rem; }
-  .quasi-button:hover,
-  .quasi-button:link:hover,
-  .quasi-button:active:hover,
-  .quasi-button:visited:hover,
-  .quasi-button:hover:hover {
-    border: 1px solid #c3e85f; }
-  @media screen and (min-width: 490px) {
-    .quasi-button,
-    .quasi-button:link,
-    .quasi-button:active,
-    .quasi-button:visited,
-    .quasi-button:hover {
-      font-size: 1.5rem; } }
-
-.mobile-only {
-  display: inline; }
-  @media screen and (min-width: 490px) {
-    .mobile-only {
-      display: none; } }
-
 #greeting {
   text-align: center;
   *zoom: 1;
@@ -319,8 +275,8 @@ a:hover {
 
 .copy {
   background-color: white;
-  font-size: 1.1rem;
-  color: #6e6e6e;
+  font-size: 1.3rem;
+  color: #626262;
   width: 90%;
   margin: 0 auto;
   margin-bottom: 3em;
@@ -341,13 +297,3 @@ a:hover {
       margin-left: 25.58941%; }
       .copy:last-child {
         margin-right: 0; } }
-
-@media screen and (min-width: 800px) {
-  .third {
-    text-align: center;
-    display: block;
-    float: left;
-    margin-right: 2.35765%;
-    width: 31.76157%; }
-    .third:last-child {
-      margin-right: 0; } }

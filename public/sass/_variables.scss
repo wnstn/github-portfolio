@@ -16,8 +16,8 @@ $desktop: new-breakpoint(min-width 1025px 12);
 
 /* TYPOGRAPHY */
 
-$serif-font: "chaparral-pro",serif; // weights: 300, 300 italic, 900
-$sans-serif-font: "brandon-grotesque", sans-serif; // weights: 400, 400 italic
+$serif-font: "chaparral-pro-display",serif; // weights: 300
+$sans-serif-font: "brandon-grotesque", sans-serif; // weights: 900
 
 $base-font-family: $serif-font;
 $header-font-family: $sans-serif-font;
